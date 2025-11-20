@@ -2,9 +2,9 @@
 
 ## Implement Failover Groups for Azure SQL Database
 
-## Task 1: Create a Failover Group between two Azure SQL databases located in different Azure regions (Germany West central and Sweden Central)
+## Task 1: Create a Failover Group between two Azure SQL databases located in different Azure regions (France Central and Sweden Central)
 
-Navigate to the **SQL Server** in the Germany West Central Region. Open the tab **Failover groups**:
+Navigate to the **SQL Server** in the France Central Region. Open the tab **Failover groups**:
 ![image](./img/03.png)
 
 ### Create a Failover Group and select your **SQL Server** in the Sweden Central Region
@@ -34,15 +34,15 @@ Reader can refer to the [Previous Challenge Solution](../challenge-3/solution.md
 
 ## Disaster Recovery for Azure SQL Database
 
-## Task 2: Failback to Germany West Central Region
+## Task 2: Failback to France Central Region
 
 ### Navigate to the **SQL Server**. Open the created **Failover group**:
 ![image](./img/20.png)
 
-### Failback to Germany West Central Region
+### Failback to France Central Region
 ![image](./img/21.png)
 
-### **SQL Server** in Germany West Central is now the Primary server.
+### **SQL Server** in France Central is now the Primary server.
 ![image](./img/22.png)
 
 ### Open the Data Science Virtual Machine, and test the connection to the Server using the **fail over group listener endpoint**:

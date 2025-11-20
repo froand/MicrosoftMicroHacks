@@ -6,18 +6,18 @@ Please ensure that you successfully passed [challenge 2](./02_challenge.md) befo
 
 ### Goal 🎯
 
-In Challenge 3, you will learn how to protect Azure VMs with Azure Site Recovery, and how to enable replication to a secondary site. Additionally, you will successfully run test & production failovers from Germany West Central to Sweden Central, and fail back again from Sweden to Germany.
+In Challenge 3, you will learn how to protect Azure VMs with Azure Site Recovery, and how to enable replication to a secondary site. Additionally, you will successfully run test & production failovers from France Central to Sweden Central, and fail back again from Sweden to France.
 
 ### Actions
 
 * Task 1: Set up and enable disaster recovery with Azure Site Recovery and monitor the progress.
 * Task 2: Perform a disaster recovery drill, create recovery plan and run a test failover.
-* Task 3: Run a production failover from Germany West Central to Sweden Central region and failback again from Sweden to Germany.
+* Task 3: Run a production failover from France Central to Sweden Central region and failback again from Sweden to France.
 
 ### Success Criteria ✅
 
 * You enabled the replication for all related components of the web application to the Sweden Central region.
-* You successfully initiated a test failover from Azure Region Germany West Central to Sweden Central with near-zero downtime.
+* You successfully initiated a test failover from Azure Region France Central to Sweden Central with near-zero downtime.
 * You successfully ran the production failover to the Sweden Central region.
 
 ### 📚 Learning Resources

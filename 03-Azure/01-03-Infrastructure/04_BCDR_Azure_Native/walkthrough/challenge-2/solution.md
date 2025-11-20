@@ -73,7 +73,7 @@ This might take a while.
 
 ## Create a New Custom Policy
 
-Go to the Azure Site Recovery **ASR Vault** in the Primary Region (Germany West Central).
+Go to the Azure Site Recovery **ASR Vault** in the Primary Region (France Central).
 
 ![image](./img/041.png)
 
@@ -142,7 +142,7 @@ To backup our storage account, assign the Backup Vault in the Primary Region som
 
 ### Enable System Managed Identity for the Backup Vault and Copy the MI Object ID
 
-Go to the Backup Vault in the Primary Region (Germany West Central) and navigate to the Identity tab.
+Go to the Backup Vault in the Primary Region (France Central) and navigate to the Identity tab.
 
 ![Identity Tab](./img/060.png)
 
@@ -152,7 +152,7 @@ Click **Azure role assignments**.
 
 ### Assign the "Storage Backup Contributor" Role to Backup Vault Managed Identity
 
-Go back to the Storage Account in the Primary Region (Germany West Central). Navigate to the **Access Control (IAM)** tab and add a role assignment.
+Go back to the Storage Account in the Primary Region (France Central). Navigate to the **Access Control (IAM)** tab and add a role assignment.
 
 ![image](./img/061.png)
 

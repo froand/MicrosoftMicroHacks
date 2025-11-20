@@ -1,21 +1,21 @@
-## Challenge 5 - Failback to the Primary Region (Germany West Central) 
+## Challenge 5 - Failback to the Primary Region (France Central) 
 ## Prerequisites
 
 Please ensure that you successfully passed [challenge 4](./04_challenge.md) before continuing with this challenge.
 
 ### Goal 🎯
 
-In challenge 5, you will failback the web application from Sweden Central to Germany West Central. The storage account could be failed back as well to Germany West Central.
+In challenge 5, you will failback the web application from Sweden Central to France Central. The storage account could be failed back as well to France Central.
 
 ### Actions 🛠️
 
-* Failback the Web Application from Sweden Central to Germany West Central region (Source environment) and monitor the progress.
-* Failback Storage Account to Germany West Central.
+* Failback the Web Application from Sweden Central to France Central region (Source environment) and monitor the progress.
+* Failback Storage Account to France Central.
 * Restore a VM in Azure.
 
 ### Success Criteria ✅
 
-* The failback of all resources to the Germany West Central region has been successfully performed.
+* The failback of all resources to the France Central region has been successfully performed.
 
 ### Learning Resources 📚
 

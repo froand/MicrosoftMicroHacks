@@ -19,7 +19,7 @@ We will use **Infrastructure as Code** to deploy the lab environment. There are 
 1. **Azure Portal**: Suitable for those unfamiliar with IaaS deployment, allowing deployment by uploading the provided **ARM** scripts.
 1. Alternative: **Bicep/ARM scripts via CloudShell**: This method is preferred for automation
 
-### Option 1 - Deploy from the Azure Portal
+### Deploy Custom Template from the Azure Portal
 
 1. Go to the Azure portal and sign in.
 2. In the Azure portal search bar, search for "deploy a custom template" and select it from the available options.
@@ -29,43 +29,36 @@ We will use **Infrastructure as Code** to deploy the lab environment. There are 
 
 Refer to the [Step-by-Step Deployment Guide](../walkthrough/challenge-1/img/deployment/solution.md) for detailed guidance.
 
-### Option 2 - Infrastructure as Code (ARM/Bicep) Deployment via CloudShell
-
-To deploy the lab environment using **Bicep**, use the command documented here:
- [CloudShell Deployment command](../Infra/App1/ReadMe.md) 
-
 
 ### 📚 Deploy a custom template
 * [Quickstart: Create and deploy ARM templates using the Azure portal](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal)
 
 ## Exploration of the Lab
 
-After a successful deployment, you should see two new resource groups: `mh-source-germanywestcentral-rg` and `mh-target-swedencentral-rg`.
+After a successful deployment, you should see two new resource groups: `mh-source-FranceCentral-rg` and `mh-target-swedencentral-rg`.
 
 Verify the following resources and setup. Ensure the storage account has geo-redundancy enabled.
 
-* **Region 1: Germany West Central (Source environment)**
-  * Resource Group: `mh<your assigned number>-source-germanywestcentral-rg`
-  * Recovery Services Vault: `mh-germanywestcentral-asrvault`
-  * Backup Vault: `mh-germanywestcentral-asrvault-backupVault`
-  * Storage Account with LRS (locally-redundant storage) redundancy: `mhgermanywestcentral` \<Suffix\>
+* **Region 1: France Central (Source environment)**
+  * Resource Group: `mh<your assigned number>-source-FranceCentral-rg`
+  * Recovery Services Vault: `mh-FranceCentral-asrvault`
+  * Backup Vault: `mh-FranceCentral-asrvault-backupVault`
+  * Storage Account with LRS (locally-redundant storage) redundancy: `mhgFranceCentral` \<Suffix\>
 * **Region 2: Sweden Central (Target environment)**
   * Resource Group: `mh<your assigned number>-target-swedencentral-rg`
   * Recovery Services Vault: `mh-swedencentral-asrvault`
   * Backup Vault: `mh-swedencentral-asrvault-backupVault`
 
 There is a WebApp running on the machines deployed in the Lab Environment. The Web Application uses two Virtual Machines as backend servers, so it might be running from either VM `mh-web1` or VM `mh-web2`. The lab environment provides a UI to see which host the web application is running from.
+The first picture shows you the URL from the Load Balancer in front of the two VM's, this information is also available in the DNS name of the Public IP on the Loadbalancer and VM's. The second picture show the Traffic Manager view of the URL.
 
-![web1](../walkthrough/challenge-1/exploration/1.png)
-![web2](../walkthrough/challenge-1/exploration/2.png)
 ![web3](../walkthrough/challenge-1/exploration/3.png)
-
 ![web4](../walkthrough/challenge-1/exploration/4.png)
 ![web5](../walkthrough/challenge-1/exploration/004.png)
 
 ### Success Criteria ✅
 
-* Resource Groups created in both regions (Germany West Central & Sweden Central).
+* Resource Groups created in both regions (France Central & Sweden Central).
 * Recovery Services Vaults created in both regions.
 * Backup Vaults created in both regions.
 * A locally-redundant Storage Account created.

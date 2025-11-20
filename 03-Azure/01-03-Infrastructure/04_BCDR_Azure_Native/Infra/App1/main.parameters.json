@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parDeploymentPrefix": {
-      "value": "student<insertParticipantNumber>"
+      "value": "mh<your assigned number>"
     },
     "sourceLocation": {
       "value": "francecentral"

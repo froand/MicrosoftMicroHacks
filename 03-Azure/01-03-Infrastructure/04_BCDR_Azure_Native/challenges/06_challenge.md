@@ -39,7 +39,7 @@ In challenge 6, you will focus on implementing disaster recovery strategies for 
 
 ### Actions
 * Implement Failover Groups for Azure SQL Database:
-  * Task 1: Create a Failover Group between two Azure SQL databases located in different Azure regions (Germany West Central and Sweden Central).
+  * Task 1: Create a Failover Group between two Azure SQL databases located in different Azure regions (France Central and Sweden Central).
   * Task 2: Configure automatic failover policies and test the failover mechanism to ensure seamless transition in case of a disaster.
 
 ### Success Criteria ✅
@@ -53,4 +53,4 @@ In challenge 6, you will focus on implementing disaster recovery strategies for 
 * [Create a single database in Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) -->
 
 **[⬅️ BCDR Micro Hack - Home Page](../Readme.md)** |
-**[⬅️ Challenge 5 - Failback to the Primary Region (Germany West Central)](./05_challenge.md)**
+**[⬅️ Challenge 5 - Failback to the Primary Region (France Central)](./05_challenge.md)**

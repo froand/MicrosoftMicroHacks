@@ -10,7 +10,7 @@
 
 Please ensure that you successfully verified the [General prerequisits](../../Readme.md#general-prerequisites) before continuing with this challenge.
 
-### Task 1: Create Azure Resources in region Germany West Central
+### Task 1: Create Azure Resources in region France Central
 
 Sign in to the [Azure Portal](https://portal.azure.com/).
 

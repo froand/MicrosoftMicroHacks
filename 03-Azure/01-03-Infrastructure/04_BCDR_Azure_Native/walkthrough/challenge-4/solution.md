@@ -44,13 +44,13 @@ You have successfully failed-over the Web Application!
 
 ## Task 2: Set up and configure Azure Storage Account replication to another region using Geo-redundant storage (GRS) or Geo-zone-redundant storage (GZRS) to ensure data availability in case of regional outages.
 
-Navigate to the **Azure Storage Account** in the Germany West Central Region. Open the tab **Redundancy**:
+Navigate to the **Azure Storage Account** in the France Central Region. Open the tab **Redundancy**:
 ![image](./img/01.png)
 
-### Choose Geo-redundant storage (GRS) as redundancy option. This will enable cross-replication of your storage account with the paired region Germany North. 
+### Choose Geo-redundant storage (GRS) as redundancy option. This will enable cross-replication of your storage account with the paired region France South. 
 ![image](./img/02.png)
 
-### You can see now Germany North as the Secondary Region of the Storage Account:
+### You can see now France South as the Secondary Region of the Storage Account:
 ![image](./img/11.png)
 
 ### Learning resources
@@ -60,7 +60,7 @@ Navigate to the **Azure Storage Account** in the Germany West Central Region. Op
 
 ## Task 3: Perform a failover test for the storage account to validate the disaster recovery setup.
 
-### Run the test failover from Germany West Central to the Sweden Central Region
+### Run the test failover from France Central to the Sweden Central Region
 ![image](./img/12.png)
 
 ### Failover Completed
