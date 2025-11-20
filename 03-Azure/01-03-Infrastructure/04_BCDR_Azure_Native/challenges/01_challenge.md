@@ -35,21 +35,21 @@ Refer to the [Step-by-Step Deployment Guide](../walkthrough/challenge-1/img/depl
 
 ## Exploration of the Lab
 
-After a successful deployment, you should see two new resource groups: `mh-source-FranceCentral-rg` and `mh-target-swedencentral-rg`.
+After a successful deployment, you should see two new resource groups: `labuser-source-FranceCentral-rg` and `labuser-target-swedencentral-rg`.
 
 Verify the following resources and setup. Ensure the storage account has geo-redundancy enabled.
 
 * **Region 1: France Central (Source environment)**
-  * Resource Group: `mh<your assigned number>-source-FranceCentral-rg`
-  * Recovery Services Vault: `mh-FranceCentral-asrvault`
-  * Backup Vault: `mh-FranceCentral-asrvault-backupVault`
-  * Storage Account with LRS (locally-redundant storage) redundancy: `mhgFranceCentral` \<Suffix\>
+  * Resource Group: `labuser<your assigned number>-source-FranceCentral-rg`
+  * Recovery Services Vault: `labuser-FranceCentral-asrvault`
+  * Backup Vault: `labuser-FranceCentral-asrvault-backupVault`
+  * Storage Account with LRS (locally-redundant storage) redundancy: `labusergFranceCentral` \<Suffix\>
 * **Region 2: Sweden Central (Target environment)**
-  * Resource Group: `mh<your assigned number>-target-swedencentral-rg`
-  * Recovery Services Vault: `mh-swedencentral-asrvault`
-  * Backup Vault: `mh-swedencentral-asrvault-backupVault`
+  * Resource Group: `labuser<your assigned number>-target-swedencentral-rg`
+  * Recovery Services Vault: `labuser-swedencentral-asrvault`
+  * Backup Vault: `labuser-swedencentral-asrvault-backupVault`
 
-There is a WebApp running on the machines deployed in the Lab Environment. The Web Application uses two Virtual Machines as backend servers, so it might be running from either VM `mh-web1` or VM `mh-web2`. The lab environment provides a UI to see which host the web application is running from.
+There is a WebApp running on the machines deployed in the Lab Environment. The Web Application uses two Virtual Machines as backend servers, so it might be running from either VM `labuser-web1` or VM `labuser-web2`. The lab environment provides a UI to see which host the web application is running from.
 The first picture shows you the URL from the Load Balancer in front of the two VM's, this information is also available in the DNS name of the Public IP on the Loadbalancer and VM's. The second picture show the Traffic Manager view of the URL.
 
 ![web3](../walkthrough/challenge-1/exploration/3.png)
