@@ -116,7 +116,7 @@ $TAPs += [pscustomobject]@{
 
 }
 
-Export-Excel -InputObject $TAPs -Path "C:\Users\anfrogne\OneDrive - Microsoft\Documents\Backup\MicroHack-2025\MicroHack-main\03-Azure\99-PreparationHelpers\TemporaryAccessPasses.xlsx" -AutoSize -Title "Temporary Access Passes" -WorksheetName "TAPs" -TableName "TAPs" -TableStyle Light1 -Show
+Export-Excel -InputObject $TAPs -Path "C:\GithubRepos\MicroHack-2025\TemporaryAccessPasses.xlsx" -AutoSize -Title "Temporary Access Passes" -WorksheetName "TAPs" -TableName "TAPs" -TableStyle Light1 -Show
 
 Write-Host "Temporary Access Passes exported to TemporaryAccessPasses.xlsx" -ForegroundColor Green
 Write-Host "Tip: Use the Mail merge feature in Word to create personalized instruction pages for users." -ForegroundColor Yellow
