@@ -64,6 +64,8 @@ Can you provide an example of composite SLA calculation?
 4. Multiply the SLA values of each individual component (link) in the chain to get the composite SLA for that chain.
 5. Identify the weakest link – the component/composites with the lowest SLA.
 
+Take look at this site for to create a Composite SLA for different Azure services: [SLA Estimator](https://slaestimator.aztoso.com/)
+
 </details>
 
 ## Challenge 2 & 3 - Disaster Recovery for Azure Storage Account

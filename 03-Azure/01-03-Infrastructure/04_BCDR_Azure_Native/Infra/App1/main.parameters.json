@@ -105,7 +105,7 @@
           "purpose": "sql",
           "deploy": true,
           "nameSuffix": "sql",
-          "vmSize": "Standard_D4as_v5",
+          "vmSize": "Standard_D2as_v5",
           "osDiskSize": 127,
           "dataDiskSize": 1024,
           "osType": "Windows",
