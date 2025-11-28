@@ -38,7 +38,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $false)]
-    [string]$ResourceGroupPattern = "mhadmin*"
+    [string]$ResourceGroupPattern = "labuser*"
 )
 
 # Ensure Az.Accounts and Az.Resources modules are available

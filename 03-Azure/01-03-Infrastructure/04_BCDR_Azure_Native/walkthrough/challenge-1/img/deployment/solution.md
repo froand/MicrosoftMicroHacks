@@ -31,7 +31,7 @@ This guide will help you deploy the lab environment using the provided ARM templ
     ![Load file](3load.png)
 
 2. Select the `deploy.json` file from your local machine and upload it.
-> **Note:** The `deploy.json` file is available in the GitHub repository. You can access it directly via [this link](https://github.com/microsoft/MicroHack/tree/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download it from the repository.
+> **Note:** The `deploy.json` file is available in the GitHub repository. You can access it directly via [this link](https://raw.githubusercontent.com/froand/MicrosoftMicroHacks/refs/heads/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native/Infra/App1/deploy.json) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download the raw file from the repository.
 
 3. Click on the "Save" button to proceed.
     ![Save template](./4save.png)
@@ -41,7 +41,7 @@ This guide will help you deploy the lab environment using the provided ARM templ
 1. Fill in the required fields such as Subscription, Resource Group, and Region.
 
 2. Click on "Edit parameters" to upload the `main.parameters.json` file.
-> **Note:** The `main.parameters.json` file is available in the GitHub repository. You can access it directly via [this link](https://github.com/microsoft/MicroHack/tree/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download it from the repository.
+> **Note:** The `main.parameters.json` file is available in the GitHub repository. You can access JSON template directly via [this link](https://raw.githubusercontent.com/froand/MicrosoftMicroHacks/refs/heads/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native/Infra/App1/main.parameters.json) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download the raw file from the repository.
     ![Edit parameters](./5parameter.png)
 
 3. Click on the "Load file" button and select the `main.parameters.json` file from your local machine.

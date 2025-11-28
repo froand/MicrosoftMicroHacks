@@ -25,7 +25,7 @@ We will use **Infrastructure as Code** to deploy the lab environment. There are 
 2. In the Azure portal search bar, search for "deploy a custom template" and select it from the available options.
 3. Upload the templates `deploy.json` and `main.parameters.json`.
 
-> **Note:** The template `deploy.json` and the parameter file `main.parameters.json` is available in the GitHub repository. You can access it directly via [this link](https://github.com/microsoft/MicroHack/tree/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native/Infra/App1) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download it from the repository.
+> **Note:** The template `deploy.json` and the parameter file `main.parameters.json` is available in the GitHub repository. You can access JSON template directly via [this link](https://raw.githubusercontent.com/froand/MicrosoftMicroHacks/refs/heads/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native/Infra/App1/deploy.json) and parameter directly via [this link](https://raw.githubusercontent.com/froand/MicrosoftMicroHacks/refs/heads/main/03-Azure/01-03-Infrastructure/04_BCDR_Azure_Native/Infra/App1/main.parameters.json) or navigate to the path: `.\04_BCDR_Azure_Native\Infra\App1`. Alternatively, you can download it from the repository.
 
 Refer to the [Step-by-Step Deployment Guide](../walkthrough/challenge-1/img/deployment/solution.md) for detailed guidance.
 
