@@ -19,7 +19,7 @@ Get-MgContext
 # Lab users and group creation
 
 # These variables should be changed as needed
-$eventStartDate = Get-Date -Hour 0 -Minute 0 -Second 0 -Millisecond 0 -Day 20 -Month 11 -Year 2025 # Set fixed start date for the MicroHacks event, used to define TAP validity period (24 hours from the defined start date)
+$eventStartDate = Get-Date -Hour 0 -Minute 0 -Second 0 -Millisecond 0 -Day 4 -Month 12 -Year 2025 # Set fixed start date for the MicroHacks event, used to define TAP validity period (24 hours from the defined start date)
 $UserCount = 5 # Number of users to create, we recommend a buffer of 5-10 users above expected number of participants to use for testing, last-minute registrations or if someone run into any issues a need a fresh start
 
 # Variables below does not need to be changed
