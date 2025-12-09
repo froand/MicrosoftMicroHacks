@@ -189,7 +189,8 @@ Backup Policy for storage successfully created!
 ### Task 3: Restore a VM in Azure
 - Backup job from Task 1 should be finished before proceeding here!
 
-#### Start Restore Procedure either from the **Backup** section on the VM or from the **Backup Items** in the Recovery Services Vault you used when taking backup.
+#### Start Restore Procedure 
+Either from the **Backup** section on the VM or from the **Backup Items** in the Recovery Services Vault you used when taking backup.
 ![image](./img/035.png)
 
 #### Select Restore Point
@@ -200,7 +201,9 @@ Backup Policy for storage successfully created!
 Proceed with **Restore**.
 
 ![image](./img/037.png)
+To monitor the Backup job, press **View Jobs** under **Jobs (in last 24 hours)** or **Backup Jobs** in the Recovery Services Vaults. Quick view via the Notifacations event tab as well.
 ![image](./img/038.png)
+This might take some time, start with next task and go back later.
 ![image](./img/039.png)
 
 A new Virtual Machine `mh-linux-restore` has been created in the resource group, restored from the backup.
