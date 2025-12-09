@@ -56,7 +56,7 @@ Navigate to the **Backup** tab and proceed with **Backup now**.
 
 ![image](./img/040.png)
 
-Backup job is started.
+Backup job is started. To monitor the Backup job, press **View Jobs** under **Jobs (in last 24 hours)**
 
 ![image](./img/031.png)
 
@@ -134,7 +134,7 @@ Go to the Storage Account in the Primary Region.
 ![image](./img/019.png)
 ![image](./img/019a.png)
 ![image](./img/019b.png)
-![image](./img/020.png)
+
 
 </details>
 

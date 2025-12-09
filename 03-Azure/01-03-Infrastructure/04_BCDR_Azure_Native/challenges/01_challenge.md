@@ -14,10 +14,10 @@ Below is an architecture diagram illustrating the setup. Tutorials and documenta
 
 ## Deployment
 
-We will use **Infrastructure as Code** to deploy the lab environment. There are **two methods** to achieve this:
+We will use **Infrastructure as Code** to deploy the lab environment.
 
 1. **Azure Portal**: Suitable for those unfamiliar with IaaS deployment, allowing deployment by uploading the provided **ARM** scripts.
-1. Alternative: **Bicep/ARM scripts via CloudShell**: This method is preferred for automation
+
 
 ### Deploy Custom Template from the Azure Portal
 
