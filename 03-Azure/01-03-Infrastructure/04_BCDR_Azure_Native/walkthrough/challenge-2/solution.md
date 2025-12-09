@@ -226,11 +226,14 @@ Choose a different Availability Zone than the current one as **Target**
 
 ![image](./img/071.png)
 
-Review and Start Replication
+Review and Start Replication. 
+Make shure you select the correct settings:
+* Your Recovery Services Vault under **Replication settings** Example:**labuserxxx-francecentral-asrvault** 
+* Your Automation Account under **Extension settings** Example:**labuserxxx-swedencentral-automation**
 
 ![image](./img/074.png)
 
-Wait until the replication is finished
+Wait until the replication is finished, this might take some time to finish
 
 ![image](./img/075.png)
 
