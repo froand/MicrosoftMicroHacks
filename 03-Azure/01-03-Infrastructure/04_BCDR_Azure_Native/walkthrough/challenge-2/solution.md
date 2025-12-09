@@ -219,6 +219,59 @@ You have successfully completed Challenge 2.1! 🚀
 ### Task 4: Set up disaster recovery for the Linux VM in the primary region.
 
 Enable Disaster Recovery (DR) between **Availability Zones**
+> **Note:** To enable disaster recovery (DR) between the regions, you might need to grant the Site Recovery Vault appropriate **access permissions**. If needed follow the instructions below.
+
+<details>
+<summary>💡 How-to: Access permissions for Disaster Recovery (DR)</summary>
+<br>
+
+### Enable System Managed Identity for the Recovery Services Vault
+
+Navigate to the **Recovery Services Vault** in the Primary Region (Germany West Central) and select the **Identity** tab.
+
+**Status:** On
+![image](./img/066.png)
+
+✅ System-assigned managed identity successfully enabled!
+
+#### Assign Required Azure Roles
+
+Click **Azure role assignments** to begin configuring permissions.
+
+![image](./img/067.png)
+
+Click **Add role assignment** to add the first required role.
+
+![image](./img/068.png)
+
+#### Role Assignment 1: Storage Blob Data Contributor
+
+**Select scope:**
+- Choose the specific Resource Group or a larger scope (e.g. your subscription) where disaster recovery will operate.
+
+**Select Role:** ["Storage Blob Data Contributor"](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/storage#storage-blob-data-contributor)
+
+![image](./img/068a.png)
+
+#### Role Assignment 2: Contributor
+
+Click **Add role assignment** again to add the second required role.
+
+![image](./img/068b.png)
+
+**Select scope:**
+- Use the same scope as the previous role assignment.
+
+**Select Role:** ["Contributor"](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor)
+
+![image](./img/068c.png)
+
+✅ Successfully assigned all required permissions for disaster recovery (DR)!
+
+![image](./img/069.png)
+
+</details>
+<br>
 
 Navigate to **mh-linux | Disaster recovery**
 
@@ -226,8 +279,10 @@ Choose a different Availability Zone than the current one as **Target**
 
 ![image](./img/071.png)
 
-Review and Start Replication. 
+Review and Start Replication
+
 Make shure you select the correct settings:
+* Your Storage account under **Storage settings** Example:**labuserxxxfrancecentral5 [StandardLRS]** (Might take some time to load the storage account in the list)
 * Your Recovery Services Vault under **Replication settings** Example:**labuserxxx-francecentral-asrvault** 
 * Your Automation Account under **Extension settings** Example:**labuserxxx-swedencentral-automation**
 
