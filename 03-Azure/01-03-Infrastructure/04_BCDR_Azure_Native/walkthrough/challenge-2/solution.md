@@ -227,7 +227,7 @@ Enable Disaster Recovery (DR) between **Availability Zones**
 
 ### Enable System Managed Identity for the Recovery Services Vault
 
-Navigate to the **Recovery Services Vault** in the Primary Region (Germany West Central) and select the **Identity** tab.
+Navigate to the **Recovery Services Vault** in the Primary Region (France Central) and select the **Identity** tab.
 
 **Status:** On
 ![image](./img/066.png)
