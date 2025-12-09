@@ -189,7 +189,7 @@ Backup Policy for storage successfully created!
 ### Task 3: Restore a VM in Azure
 - Backup job from Task 1 should be finished before proceeding here!
 
-#### Start Restore Procedure
+#### Start Restore Procedure either from the **Backup** section on the VM or from the **Backup Items** in the Recovery Services Vault you used when taking backup.
 ![image](./img/035.png)
 
 #### Select Restore Point
