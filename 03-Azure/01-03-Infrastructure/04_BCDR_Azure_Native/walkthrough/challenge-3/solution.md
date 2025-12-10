@@ -22,7 +22,7 @@ In this challenge, you will learn how to protect Azure VM with Azure Site Recove
 <summary>💡 Enable replication with Azure Site recovery for the Virtual Machine in the France Central Region to the Sweden Central Region</summary>
 <br>
 
-Navigate to **Recovery Services Vault** in the Sweden Central (mh-swedencentral-asrvault) which we created in the first Challenge. In the **Protected Items**, select **Replicated Items**. Then select **Replicate** and from the dropdown list select **Azure virtual machines**. The following pane will apprear:
+Navigate to **Recovery Services Vault** in the Sweden Central (labuserxxx-swedencentral-asrvault) which we created in the first Challenge. In the **Protected Items**, select **Replicated Items**. Then select **Replicate** and from the dropdown list select **Azure virtual machines**. The following pane will apprear:
 
 ![image](./img/001.png)
 

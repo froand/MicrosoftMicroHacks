@@ -20,10 +20,10 @@ Get-MgContext
 
 # These variables should be changed as needed
 $eventStartDate = Get-Date -Hour 0 -Minute 0 -Second 0 -Millisecond 0 -Day 11 -Month 12 -Year 2025 # Set fixed start date for the MicroHacks event, used to define TAP validity period (24 hours from the defined start date)
-$UserCount = 1 # Number of users to create, we recommend a buffer of 5-10 users above expected number of participants to use for testing, last-minute registrations or if someone run into any issues a need a fresh start
+$UserCount = 100 # Number of users to create, we recommend a buffer of 5-10 users above expected number of participants to use for testing, last-minute registrations or if someone run into any issues a need a fresh start
 
 # Variables below does not need to be changed
-$StartIndex = 0 # Starting index for user numbering
+$StartIndex = 100 # Starting index for user numbering
 $GroupName = "LabUsers"
 $UserNamePrefix = "LabUser-"
 $Password = New-Guid | Select-Object -ExpandProperty Guid # Generate a random password, this will not be used since TAP is configured
@@ -91,8 +91,8 @@ $TAPs = @()
 foreach ($user in $Users) {
     $properties = @{}
     $properties.isUsableOnce = $false
-    #$properties.startDateTime = $eventStartDate
-    $properties.startDateTime = (Get-Date).AddMinutes(1) # For testing purposes, set start time to 1 minute in the future
+    $properties.startDateTime = $eventStartDate
+    #$properties.startDateTime = (Get-Date).AddMinutes(1) # For testing purposes, set start time to 1 minute in the future
     $properties.endDateTime = $properties.startDateTime.AddDays(1)
     $propertiesJSON = $properties | ConvertTo-Json
 
