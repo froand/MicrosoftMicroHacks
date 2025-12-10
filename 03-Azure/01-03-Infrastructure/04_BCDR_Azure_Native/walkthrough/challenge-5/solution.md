@@ -8,21 +8,22 @@
 
 Please ensure that you successfully passed [challenge 4](../../Readme.md#challenge-4) before continuing with this challenge.
 
-In this challenge, you will have failback again the VM, SQL DB from Sweden central to France Central. The storage account should be failed back to France Central as well.
+In this challenge, you will have failback again the Web Application VM's from Sweden central to France Central. The storage account should be failed back to France Central as well.
 
 ### Actions
-* Task 1: Failback the Web Application from Sweden Central to France Central region (Source environment) and monitor the progress.
+* Task 1: Failback the Web Application VM's from Sweden Central to France Central region (Source environment) and monitor the progress.
 * Task 2: Failback Storage Account to France Central.
-* Restore a VM in Azure.
+
 
 # Solution
 
 ## Disaster Recovery for Azure Virtual Machines
 
-## Task 1: Failback the VM from Sweden to France region (Source environment) and monitor the progress
+## Task 1: Failback the VM's from Sweden to France region (Source environment) and monitor the progress
 
-### Ensure the VM has been  Re-protected (this is done in challenge 3)
-![image](./img/01.png)
+### Ensure the VM's in the Recovery Plan has been  Re-protected (this is done in challenge 3).
+The Reprotect changes the sync back to source destination.
+![image](./img/29.png)
 
 * [Azure Site Recovery - How to reprotect](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-reprotect)
 
@@ -30,13 +31,11 @@ In this challenge, you will have failback again the VM, SQL DB from Sweden centr
 You can't fail back the VM until the replication has completed, and synchronization is 100% completed. The synchronization process can take several minutes to complete.
 After the Synchronization completes, select **Failover**.
 
-![image](./img/mh-ch-screenshot-27.png)
+![image](./img/001.png)
 
-![image](./img/mh-ch-screenshot-28.png)
+![image](./img/002.png)
 
-Check the Virtual machine list. Server01 is running again in the France Central region.
-
-![image](./img/mh-ch-screenshot-29.png)
+Check the Virtual machine list. Web01 and Web02 is running again in the France Central region.
 
 ## Disaster Recovery for Azure Storage Account
 
