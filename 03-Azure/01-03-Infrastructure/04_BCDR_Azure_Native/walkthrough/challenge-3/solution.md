@@ -117,6 +117,7 @@ This Task can take up to 10 minutes to finish.
 
 ![image](./img/009.png)
 
+Both VM's must be in **Protected** state before you can do a Test Failover in the following task.
 ![image](./img/011.png)
 
 ![image](./img/010.png)
