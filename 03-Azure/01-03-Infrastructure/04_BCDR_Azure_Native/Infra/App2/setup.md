@@ -43,6 +43,19 @@ Use the Awesome Azure Developer CLI to deploy the N-tier application.
 ```bash
 azd up
 ```
+ Use your **Labuserxxx** name as the **Environment name** in the deployment
+
+ Choose **Westeurope** as the region in the list. (Static Webapps are available in these regions: westus2,centralus,eastus2,westeurope,eastasia)
+
+ Use the cursor to select!
+
+You need Azure Developer CLI installed in your local machine, use this command to install: winget install microsoft.azd
+
+You need python installed, use this cmd to install: winget install --id Python.Python.3.9
+
+**Or use Azure Cloud Shell through the portal.** NB, Start the Bash edition.
+
+https://portal.azure.com/#cloudshell/
 
 Use the Awesome Azure Developer CLI to check the status of your deployment.
 
