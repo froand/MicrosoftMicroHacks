@@ -14,7 +14,7 @@ In this challenge, you will learn how to protect Azure VM with Azure Site Recove
 
 | Challenge | Tasks |
 |-----------|-------|
-| **Challenge 3 - Protect in Azure with Disaster Recovery (Inter-regional)** | 1. Enable replication with Azure Site Recovery for the Virtual Machine in the Germany West Central Region to the Sweden Central Region <br> 2. Create a recovery plan and run a disaster recovery drill <br> 3. Run a production failover from Germany West Central to Sweden Central and failback again from Sweden to Germany region |
+| **Challenge 3 - Protect in Azure with Disaster Recovery (Inter-regional)** | 1. Enable replication with Azure Site Recovery for the Virtual Machine in the France Central Region to the Sweden Central Region <br> 2. Create a recovery plan and run a disaster recovery drill <br> 3. Run a production failover from France Central to Sweden Central and failback again from Sweden to Germany region |
 
 - [Task 1: Enable replication with Azure Site Recovery](#task-1-enable-replication-with-azure-site-recovery-for-the-virtual-machine-in-the-germany-west-central-region-to-the-sweden-central-region)
     - [Access permissions for multi-region Disaster Recovery (DR)](#enable-system-managed-identity-for-the-recovery-services-vault)
@@ -32,9 +32,9 @@ In this challenge, you will learn how to protect Azure VM with Azure Site Recove
 
 * Task 1: Set up and enable disaster recovery with Azure Site Recovery and monitor the progress.
 * Task 2: Perform a disaster recovery drill, create recovery plan and run a test failover.
-* Task 3: Run a production failover from Germany West Central to Sweden Central region and failback again from Sweden to Germany.
+* Task 3: Run a production failover from France Central to Sweden Central region and failback again from Sweden to Germany.
 
-## Task 1: Enable replication with Azure Site recovery for the Virtual Machine in the Germany West Central Region to the Sweden Central Region
+## Task 1: Enable replication with Azure Site recovery for the Virtual Machine in the France Central Region to the Sweden Central Region
 
 > **Note:** To enable disaster recovery (DR) between the regions, you might need to grant the Site Recovery Vault appropriate **access permissions**. If needed follow the instructions below.
 
@@ -88,7 +88,7 @@ Click **Add role assignment** again to add the second required role.
 <br>
 
 <details close>
-<summary>💡 Enable replication with Azure Site recovery for the Virtual Machine in the Germany West Central Region to the Sweden Central Region</summary>
+<summary>💡 Enable replication with Azure Site recovery for the Virtual Machine in the France Central Region to the Sweden Central Region</summary>
 <br>
 
 Navigate to **Recovery Services Vault** in the Sweden Central (mh-swedencentral-asrvault) which we created in the first Challenge. In the **Protected Items**, select **Replicated Items**. Then select **Replicate** and from the dropdown list select **Azure virtual machines**. The following pane will apprear:
@@ -139,7 +139,7 @@ Select `mh-web1` and `mh-web2` as the protected source machine and create the re
 
 ![image](./img/10.png)
 
-### Run the test failover from Germany West Central to the Sweden Central Region
+### Run the test failover from France Central to the Sweden Central Region
 Navigate to the recovery plan created in the previous task. 
 
 ![image](./img/11.png)
@@ -176,8 +176,8 @@ After all jobs are finished successully, Navigate to the Virtual Machines list. 
 
 ![image](./img/22.png)
 
-## Task 3: Run a production failover from Germany West Central to Sweden Central and failback again from Sweden to Germany region (Source environment) and monitor the progress
-### Run the production failover for the web application from Germany West Central to Sweden Central
+## Task 3: Run a production failover from France Central to Sweden Central and failback again from Sweden to Germany region (Source environment) and monitor the progress
+### Run the production failover for the web application from France Central to Sweden Central
 ![image](./img/23.png)
 
 ![image](./img/24.png)

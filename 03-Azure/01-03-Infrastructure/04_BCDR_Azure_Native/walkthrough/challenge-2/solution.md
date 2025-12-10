@@ -85,7 +85,7 @@ This might take a while.
 
 ### Create a New Custom Policy
 
-Go to the Azure Site Recovery **ASR Vault** in the Primary Region (Germany West Central).
+Go to the Azure Site Recovery **ASR Vault** in the Primary Region (France Central).
 
 ![image](./img/041.png)
 
@@ -155,7 +155,7 @@ Go to the Storage Account in the Primary Region.
 
 ### Enable System Managed Identity for the Backup Vault and Copy the MI Object ID
 
-Go to the Backup Vault in the Primary Region (Germany West Central) and navigate to the **Identity** tab.
+Go to the Backup Vault in the Primary Region (France Central) and navigate to the **Identity** tab.
 
 Status: **On**
 ![Identity Tab](./img/056.png)
@@ -186,7 +186,7 @@ Role assignment successfully configured
 
 ### Solution Example 2 -  Assign the "Storage Account Backup Contributor" Role to the Backup Vault Managed Identity
 
-Go back to the Storage Account in the Primary Region (Germany West Central). Navigate to the **Access Control (IAM)** tab and add a role assignment.
+Go back to the Storage Account in the Primary Region (France Central). Navigate to the **Access Control (IAM)** tab and add a role assignment.
 
 ![image](./img/061.png)
 
@@ -266,7 +266,7 @@ Enable Disaster Recovery (DR) between **Availability Zones**
 
 ### Enable System Managed Identity for the Recovery Services Vault
 
-Navigate to the **Recovery Services Vault** in the Primary Region (Germany West Central) and select the **Identity** tab.
+Navigate to the **Recovery Services Vault** in the Primary Region (France Central) and select the **Identity** tab.
 
 **Status:** On
 ![image](./img/066.png)
