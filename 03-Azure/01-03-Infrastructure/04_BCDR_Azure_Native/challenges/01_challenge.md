@@ -37,6 +37,10 @@ Refer to the [Step-by-Step Deployment Guide](../walkthrough/challenge-1/img/depl
 
 After a successful deployment, you should see two new resource groups: `labuser-source-FranceCentral-rg` and `labuser-target-swedencentral-rg`.
 
+> [!IMPORTANT]
+> We have changed the source region from **Germany West Central** to **France Central**.
+> So keep this in mind when going through the labs, the screenshots has not been updated.
+
 Verify the following resources and setup. Ensure the storage account has geo-redundancy enabled.
 
 * **Region 1: France Central (Source environment)**
