@@ -320,7 +320,11 @@ Choose a different Availability Zone than the current one as **Target**
 
 Review and Start Replication
 
-![image](./img/074.png)
+> [!IMPORTANT]
+> When using the Portal, the **Automation Account** must exists in the **same** **Resource group** as the **Recovery Services Vault**. 
+> So in this exercise we need to create a **new** **Automation account** if we are replicating to the **France Central Vault**. The existing **Automation account** is placed in the **Sweden Resource group**.
+
+![image](./img/084.png)
 
 Wait until the replication is finished
 
